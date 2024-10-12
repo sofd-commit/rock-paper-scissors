@@ -1,0 +1,103 @@
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.choices{
+  display: grid;
+  grid-template-columns: minmax(100px, 3fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.choices button{
+  text-decoration: none;
+  font-size: 3.5rem;
+  padding: 2rem;
+  border: none;
+  background-color: white;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease box-sahdow 0.3s ease;
+}
+.choices button:hover{
+  background-color: rgb(212, 238, 173);
+}
+.choices button:active{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#playerDisplay, #computerDisplay{
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+#resultDisplay{
+  font-size: 3.5rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.scoreDisplay{
+  font-size: 1.5rem;
+}
+.greenText,
+#playerScoreDisplay
+{
+  color: rgb(13, 211, 13);
+}
+.redText, #computerScoreDisplay
+{
+  color: red;
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
